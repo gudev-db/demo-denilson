@@ -13,7 +13,7 @@ FATOR_CONVERSAO = 0.002  # Fator de calibração (500px = 1m)
 # Carrega o modelo (com cache para evitar recarregar)
 @st.cache_resource
 def carregar_modelo():
-    return YOLO('yolov8n.pt')  # Substitua por seu modelo customizado
+    return YOLO('best.pt')  # Substitua por seu modelo customizado
 
 def estimar_massa(imagem):
     """Processa a imagem e retorna a imagem anotada com as estimativas"""
